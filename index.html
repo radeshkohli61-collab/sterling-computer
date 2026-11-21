@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sterling Computer Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="logo">Sterling Computer Center</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#register" class="btn-nav">Register Now</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="tag">Admissions Open • 2026</span>
+      <h1>Learn Practical Computer Skills for a Better Career</h1>
+      <p>
+        Hands-on training in Basic Computers, Tally Prime, MS Office, Web Design, and Programming with 100% practical lab sessions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#register" class="btn btn-primary">Book Free Demo Class</a>
+        <a href="#courses" class="btn btn-secondary">View Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="section" id="courses">
+    <div class="container">
+      <h2 class="section-title">Popular Courses</h2>
+      <p class="section-subtitle">Job-oriented diploma and certificate programs for students and professionals.</p>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <h3>ADCA (1 Year)</h3>
+          <p>Advance Diploma in Computer Applications covering MS Office, Tally, Web Design &amp; Internet.</p>
+          <a href="#register" class="card-link" data-course="ADCA (1 Year)">Enroll in ADCA →</a>
+        </div>
+
+        <div class="course-card">
+          <h3>DCA (6 Months)</h3>
+          <p>Diploma in Computer Applications ideal for students and government exam preparation.</p>
+          <a href="#register" class="card-link" data-course="DCA (6 Months)">Enroll in DCA →</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Tally Prime + GST</h3>
+          <p>Complete business accounting, billing, inventory, payroll, and GST return filing.</p>
+          <a href="#register" class="card-link" data-course="Tally Prime + GST">Enroll in Tally →</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Web Development</h3>
+          <p>Learn HTML, CSS, and JavaScript from scratch by building real websites.</p>
+          <a href="#register" class="card-link" data-course="Web Development">Enroll in Web Dev →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple About / Highlights Section -->
+  <section class="section bg-light" id="about">
+    <div class="container">
+      <h2 class="section-title">Why Choose Sterling?</h2>
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <h4>💻 1:1 Lab Practice</h4>
+          <p>Dedicated computer system for every student during practical sessions.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>📜 Valid Certificate</h4>
+          <p>Recognized certification upon successful completion of your course.</p>
+        </div>
+        <div class="highlight-box">
+          <h4>⏰ Flexible Timings</h4>
+          <p>Morning and evening batches available for school and college students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration / Demo Class Section -->
+  <section class="section" id="register">
+    <div class="container form-wrapper">
+      <div class="form-info">
+        <h2>Register for a Free Demo Class</h2>
+        <p>Fill out the form to reserve your seat or inquire about course fees and batch timings.</p>
+        <ul class="contact-list">
+          <li><strong>📍 Address:</strong> W No 4, near Gurudwara gali, Main Bazar, Sunderbani</li>
+          <li><strong>📞 Phone:</strong> +91 8825005251</li>
+          <li><strong>🕒 Timing:</strong> Mon – Sat, 8:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+
+      <form class="simple-form" id="registerForm">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter your full name" required />
+
+        <label for="studentPhone">Mobile Number</label>
+        <input type="tel" id="studentPhone" placeholder="Enter 10-digit mobile number" required />
+
+        <label for="courseSelect">Select Course / Option</label>
+        <select id="courseSelect" required>
+          <option value="Free Demo Class">Book a Free Demo Class</option>
+          <option value="ADCA (1 Year)">ADCA (1 Year)</option>
+          <option value="DCA (6 Months)">DCA (6 Months)</option>
+          <option value="Tally Prime + GST">Tally Prime + GST</option>
+          <option value="Web Development">Web Development</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Submit Registration</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Sterling Computer Center. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
